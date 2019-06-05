@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+  </head>
+<body class="bg-info">
+
+ 
+
+<div class="Voprosi row py-5">
+  <img src="door.png" class="otvet1 shadow p-3 mb-5 bg-white rounded mx-auto" style="height: 500px; width: 300px;">
+
+  <img src="door2.png" class="otvet2 ml-5 shadow p-3 mb-5 bg-white rounded mx-auto" style="height: 500px; width: 300px;">
+
+  <img src="door3.png" class="otvet3 ml-5 shadow p-3 mb-5 bg-white rounded mx-auto" style="height: 500px; width: 300px;">
+
+</div>
+
+<!--Voprosi2-->
+
+<div class="Voprosi2 row" style="background-image: url(bg.jpg); height: 850px;width: auto; background-size: 100% 100%;">
+  <h1 class="text-white text-center">Помоги Гарри найти его метлу,плащ и палочку!</h1>
+  <div class="bg-info w-100 border  ">
+    <h1 class="score text-center " style="color:white;">0</h1>
+  </div>
+
+  <img src="mantiya.png" class="otvet21" style="height: 150px; width: 100px; margin-top: 600px;  position: absolute;">
+  <img src="metla.png" class="otvet22"  style="height: 150px; width: 100px;
+  margin-top: 400px;margin-left: 300px; position: absolute;">
+
+  <img src="palochka.png" class="otvet23" style="height: 150px; width: 100px;
+  margin-top: 500px;margin-left: 600px;  position: absolute;">
+</div>
+
+<!--Voprosi3-->
+
+<div class="voprosi3 otvet30 row" style="background-image: url(Window.jpg);background-size: 100% 100%; height: 850px;">
+  <h1 class="text-white text-center">Вам повiстка прыгать в окно или в армию?</h1>
+  <div class="bg-info w-100 border  ">
+    <h1 class="score text-center " style="color:white;">0</h1>
+  </div>
+  <div class="otvet31">
+    <img src="pv.jpg" class="" style="height: 200px;width: 300px;">
+  </div>
+</div>
+
+<!--Voprosi4-->
+
+<div class="Voprosi4" style="background-image: url(zona.jpg);">
+  <h1>Ты зашел на хату твои действия</h1>
+
+  <div>
+    <div>
+      <h5>Здарова пац</h5>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+      let score = 0
+
+
+document.querySelector(".otvet1").onclick = function(){
+  alert("добро пожаловать в хогвартс");
+document.querySelector(".Voprosi").style.display = "none";
+document.querySelector(".Voprosi2").style.display = "block";
+
+    }
+document.querySelector(".otvet2").onclick = function(){
+  alert("Ага");
+document.querySelector(".Voprosi").style.display = "none";
+document.querySelector(".voprosi3").style.display = "block";
+    }
+document.querySelector(".otvet3").onclick = function(){
+  alert("Ого");
+      }
+
+
+// voprosi2
+
+document.querySelector(".otvet21").onclick = function(){
+  alert("Угу");
+document.querySelector(".otvet21").style.display = "none";
+score = score + 1
+ document.querySelector(".score").innerHTML = score;
+
+    }
+document.querySelector(".otvet22").onclick = function(){
+  alert("Ага");
+  document.querySelector(".otvet22").style.display = "none";
+  score = score + 1
+   document.querySelector(".score").innerHTML = score;
+    }
+document.querySelector(".otvet23").onclick = function(){
+  alert("Ого");
+  document.querySelector(".otvet23").style.display = "none";
+  score = score + 1
+  document.querySelector(".score").innerHTML = score;
+
+      }
+document.querySelector(".Voprosi2").style.display = "none";
+
+// voprosi3
+document.querySelector(".otvet31").onclick = function(){
+  alert("Ты выкинул повiстку и прыгнул в окно");
+document.querySelector(".otvet31").style.display = "none";
+    }
+document.querySelector(".otvet30").onclick = function(){
+  alert("Ты упал на мента и убежал");
+  document.querySelector(".otvet30").style.display = "none";
+  score = score + 1
+   document.querySelector(".score").innerHTML = score;
+
+    }
+
+document.querySelector(".Voprosi4").style.display = "none";
+
+document.querySelector(".otvet31").onclick = function(){
+  alert("Ты выкинул повiстку и прыгнул в окно");
+document.querySelector(".otvet31").style.display = "none";
+    }
+document.querySelector(".otvet30").onclick = function(){
+  alert("Ты упал на мента и убежал");
+  document.querySelector(".otvet30").style.display = "none";
+  score = score + 1
+   document.querySelector(".score").innerHTML = score;
+
+    }
+document.querySelector(".Voprosi4").style.display = "none";
+
+document.querySelector(".score")
+    </script>
+  </body>
+</html>
